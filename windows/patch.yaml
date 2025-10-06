@@ -15,8 +15,7 @@ spec:
           resources:
             requests:
               storage: 20Gi
-          storageClassName: ocs-storagecluster-cephfs
         source:
           pvc:
-            name: windows-10-base-xl85p
-            namespace: chrisj
+            name: windows-10-source
+            namespace: vms

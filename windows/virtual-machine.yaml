@@ -15,11 +15,10 @@ spec:
           resources:
             requests:
               storage: 20Gi
-          storageClassName: ocs-storagecluster-cephfs
         source:
           pvc:
-            name: windows-10-base-lfr6r
-            namespace: chrisj
+            name: windows-10-source
+            namespace: vms
   running: true
   template:
     metadata:
